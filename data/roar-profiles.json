@@ -1,0 +1,79 @@
+{
+  "profiles": [
+    {
+      "id": "colossal-dragon", "label": "ROAR.Profile.ColossalDragon",
+      "mainAudio": "assets/audio/main/roars-grows/01_roar_dragon_long.mp3", "mainGain": 0.78,
+      "depthLayers": [
+        {"file":"assets/audio/depth/10_colossal_roar_depth.ogg","gain":0.19,"delayMs":0,"fadeInMs":80,"fadeOutMs":300},
+        {"file":"assets/audio/depth/04_body_resonance_bed.ogg","gain":0.14,"delayMs":70,"fadeInMs":140,"fadeOutMs":400},
+        {"file":"assets/audio/depth/09_ground_vibration_layer.ogg","gain":0.11,"delayMs":390,"fadeInMs":70,"fadeOutMs":350}
+      ],
+      "impactOffsetMs": 450, "effectRadius": 6, "audioRadius": 12, "sourceShake": 6.0, "nearbyShake": 3.2, "vfxScale": 1.2, "vfxIntensity": 1.0,
+      "enabledVfx": ["impulse","shockwave","dust","ground","distortion","debris","particles","residual"]
+    },
+    {
+      "id": "mutant-beast", "label": "ROAR.Profile.MutantBeast",
+      "mainAudio": "assets/audio/main/roars-grows/02_roar_mutant_lion.mp3", "mainGain": 0.8,
+      "depthLayers": [
+        {"file":"assets/audio/depth/01_chest_sub_rumble.ogg","gain":0.17,"delayMs":0,"fadeInMs":60,"fadeOutMs":260},
+        {"file":"assets/audio/depth/02_guttural_throat_layer.ogg","gain":0.15,"delayMs":40,"fadeInMs":80,"fadeOutMs":260},
+        {"file":"assets/audio/depth/07_beast_chest_pulse.ogg","gain":0.12,"delayMs":100,"fadeInMs":50,"fadeOutMs":220}
+      ],
+      "impactOffsetMs": 120, "effectRadius": 5, "audioRadius": 10, "sourceShake": 5.2, "nearbyShake": 2.8, "vfxScale": 1.0, "vfxIntensity": 0.9,
+      "enabledVfx": ["impulse","shockwave","dust","ground","debris","particles","residual"]
+    },
+    {
+      "id": "low-growl", "label": "ROAR.Profile.LowGrowl",
+      "mainAudio": "assets/audio/main/roars-grows/03_growl_monster_low.mp3", "mainGain": 0.8,
+      "depthLayers": [
+        {"file":"assets/audio/depth/02_guttural_throat_layer.ogg","gain":0.15,"delayMs":0,"fadeInMs":100,"fadeOutMs":320},
+        {"file":"assets/audio/depth/08_guttural_harmonic_bed.ogg","gain":0.12,"delayMs":30,"fadeInMs":160,"fadeOutMs":350},
+        {"file":"assets/audio/depth/01_chest_sub_rumble.ogg","gain":0.1,"delayMs":80,"fadeInMs":100,"fadeOutMs":280}
+      ],
+      "impactOffsetMs": 180, "effectRadius": 4, "audioRadius": 8, "sourceShake": 4.2, "nearbyShake": 2.0, "vfxScale": 0.9, "vfxIntensity": 0.75,
+      "enabledVfx": ["impulse","shockwave","dust","ground","distortion"]
+    },
+    {
+      "id": "long-vocal", "label": "ROAR.Profile.LongVocal",
+      "mainAudio": "assets/audio/main/roars-grows/04_vocal_monster_whirr_long.mp3", "mainGain": 0.78,
+      "depthLayers": [
+        {"file":"assets/audio/depth/03_deep_breath_pressure.ogg","gain":0.14,"delayMs":0,"fadeInMs":180,"fadeOutMs":450},
+        {"file":"assets/audio/depth/08_guttural_harmonic_bed.ogg","gain":0.13,"delayMs":100,"fadeInMs":180,"fadeOutMs":420},
+        {"file":"assets/audio/depth/04_body_resonance_bed.ogg","gain":0.11,"delayMs":180,"fadeInMs":200,"fadeOutMs":480}
+      ],
+      "impactOffsetMs": 260, "effectRadius": 5, "audioRadius": 10, "sourceShake": 4.6, "nearbyShake": 2.4, "vfxScale": 1.0, "vfxIntensity": 0.8,
+      "enabledVfx": ["impulse","shockwave","dust","distortion","particles","residual"]
+    },
+    {
+      "id": "dinosaur-vocal", "label": "ROAR.Profile.Dinosaur",
+      "mainAudio": "assets/audio/main/roars-grows/05_vocal_dinosaur_short_whirrs.mp3", "mainGain": 0.82,
+      "depthLayers": [
+        {"file":"assets/audio/depth/07_beast_chest_pulse.ogg","gain":0.16,"delayMs":0,"fadeInMs":50,"fadeOutMs":220},
+        {"file":"assets/audio/depth/03_deep_breath_pressure.ogg","gain":0.11,"delayMs":60,"fadeInMs":100,"fadeOutMs":250},
+        {"file":"assets/audio/depth/01_chest_sub_rumble.ogg","gain":0.1,"delayMs":100,"fadeInMs":80,"fadeOutMs":240}
+      ],
+      "impactOffsetMs": 90, "effectRadius": 4, "audioRadius": 8, "sourceShake": 4.5, "nearbyShake": 2.1, "vfxScale": 0.9, "vfxIntensity": 0.8,
+      "enabledVfx": ["impulse","shockwave","dust","ground","particles"]
+    },
+    {
+      "id": "demon-scream", "label": "ROAR.Profile.DemonScream",
+      "mainAudio": "assets/audio/main/screams-hisses/01_scream_demon_horse.mp3", "mainGain": 0.78,
+      "depthLayers": [
+        {"file":"assets/audio/depth/05_low_grunt_impact.ogg","gain":0.12,"delayMs":80,"fadeInMs":30,"fadeOutMs":180},
+        {"file":"assets/audio/depth/03_deep_breath_pressure.ogg","gain":0.1,"delayMs":0,"fadeInMs":80,"fadeOutMs":260}
+      ],
+      "impactOffsetMs": 100, "effectRadius": 5, "audioRadius": 10, "sourceShake": 4.8, "nearbyShake": 2.4, "vfxScale": 1.0, "vfxIntensity": 0.9,
+      "enabledVfx": ["impulse","shockwave","distortion","particles","residual"]
+    },
+    {
+      "id": "spectral-hiss", "label": "ROAR.Profile.SpectralHiss",
+      "mainAudio": "assets/audio/main/screams-hisses/02_hiss_nazgul_effect.mp3", "mainGain": 0.76,
+      "depthLayers": [
+        {"file":"assets/audio/depth/08_guttural_harmonic_bed.ogg","gain":0.1,"delayMs":80,"fadeInMs":200,"fadeOutMs":450},
+        {"file":"assets/audio/depth/06_cavernous_rumble_tail.ogg","gain":0.09,"delayMs":220,"fadeInMs":250,"fadeOutMs":600}
+      ],
+      "impactOffsetMs": 220, "effectRadius": 5, "audioRadius": 10, "sourceShake": 3.8, "nearbyShake": 1.8, "vfxScale": 1.0, "vfxIntensity": 0.75,
+      "enabledVfx": ["shockwave","distortion","particles","residual"]
+    }
+  ]
+}

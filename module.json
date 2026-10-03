@@ -1,0 +1,24 @@
+{
+  "id": "roar-impact",
+  "title": "Roar Impact",
+  "description": "Immersive, synchronized monster roar audio and VFX for Foundry Virtual Tabletop.",
+  "version": "1.0.0",
+  "compatibility": { "minimum": "14", "verified": "14", "maximum": "14" },
+  "authors": [{ "name": "RudySimp" }],
+  "esmodules": ["scripts/main.js"],
+  "styles": ["styles/roar-impact.css"],
+  "languages": [
+    { "lang": "en", "name": "English", "path": "lang/en.json" },
+    { "lang": "ru", "name": "Русский", "path": "lang/ru.json" }
+  ],
+  "socket": true,
+  "url": "https://github.com/RudySimp/roar-impact",
+  "manifest": "https://raw.githubusercontent.com/RudySimp/roar-impact/main/module.json",
+  "download": "https://github.com/RudySimp/roar-impact/releases/download/v1.0.0/roar-impact-v1.0.0.zip",
+  "readme": "https://github.com/RudySimp/roar-impact/blob/main/README.md",
+  "changelog": "https://github.com/RudySimp/roar-impact/blob/main/CHANGELOG.md",
+  "bugs": "https://github.com/RudySimp/roar-impact/issues",
+  "license": "LICENSE",
+  "type": "module",
+  "media": []
+}

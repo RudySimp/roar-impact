@@ -1,0 +1,12 @@
+{
+  "categories": {
+    "impulse":{"delayMs":0,"durationMs":400,"scale":1.05,"opacity":0.85},
+    "shockwave":{"delayMs":35,"durationMs":1100,"scale":1.35,"opacity":0.75},
+    "dust":{"delayMs":85,"durationMs":2300,"scale":1.2,"opacity":0.78},
+    "ground":{"delayMs":90,"durationMs":1800,"scale":1.25,"opacity":0.72},
+    "distortion":{"delayMs":120,"durationMs":1300,"scale":1.3,"opacity":0.4},
+    "debris":{"delayMs":210,"durationMs":1750,"scale":1.1,"opacity":0.9},
+    "particles":{"delayMs":290,"durationMs":2000,"scale":1.15,"opacity":0.85},
+    "residual":{"delayMs":1100,"durationMs":2700,"scale":1.2,"opacity":0.48}
+  }
+}

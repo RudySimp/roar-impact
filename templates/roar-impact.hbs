@@ -1,0 +1,19 @@
+<div class="roar-impact__body">
+  <label>{{localize "ROAR.UI.Profile"}}<select name="profile">{{#each profiles}}<option value="{{id}}">{{label}}</option>{{/each}}</select></label>
+  <div class="roar-impact__grid">
+    <label>{{localize "ROAR.UI.Intensity"}}<input name="intensity" type="number" min="0.25" max="2" step="0.05" value="1"></label>
+    <label>{{localize "ROAR.UI.Radius"}}<input name="radius" type="number" min="1" max="20" step="1" value="{{radius}}"></label>
+    <label>{{localize "ROAR.UI.Quality"}}<select name="quality">
+      <option value="low">{{localize "ROAR.Quality.Low"}}</option><option value="medium">{{localize "ROAR.Quality.Medium"}}</option><option value="high" selected>{{localize "ROAR.Quality.High"}}</option><option value="ultra">{{localize "ROAR.Quality.Ultra"}}</option>
+    </select></label>
+    <label>{{localize "ROAR.UI.MainVolume"}}<input name="mainVolume" type="number" min="0" max="1" step="0.05" value="{{volume}}"></label>
+    <label>{{localize "ROAR.UI.DepthVolume"}}<input name="depthVolume" type="number" min="0" max="1" step="0.05" value="0.8"></label>
+  </div>
+  <div class="roar-impact__toggles">
+    <label><input name="audio" type="checkbox" checked> {{localize "ROAR.UI.Audio"}}</label>
+    <label><input name="vfx" type="checkbox" checked> {{localize "ROAR.UI.VFX"}}</label>
+    <label><input name="shake" type="checkbox" checked> {{localize "ROAR.UI.Shake"}}</label>
+    <label><input name="randomize" type="checkbox" checked> {{localize "ROAR.UI.Randomize"}}</label>
+  </div>
+  <button type="button" data-action="roar"><i class="fa-solid fa-dragon"></i> {{localize "ROAR.UI.Roar"}}</button>
+</div>
