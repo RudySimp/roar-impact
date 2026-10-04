@@ -1,5 +1,12 @@
-# Roar Impact v1.0.0
+# Roar Impact v1.0.0 - Foundry VTT v12
 
-The first production release provides a complete monster roar/vocal impact system for Foundry VTT v14. It includes seven audio profiles, restrained depth mixing, impact-aligned VFX, distance-aware token reactions, four quality presets, deterministic multiplayer variation, a compact GM UI, and English/Russian localization.
+- Target: Foundry VTT v12
+- Reference build: 12.343
+- Module version: 1.0.0
+- Standalone and system agnostic
 
-No external Foundry modules are required. See `TEST_REPORT.md` for release validation and the documented runtime-test boundary.
+This dedicated backport preserves the seven profiles, layered audio, scene-space VFX, token reaction and falloff, multiplayer synchronization, quality settings, compact UI, cleanup, fallbacks, and EN/RU localization of the v14 release.
+
+The Scene Controls integration is adapted to the v12 array-based control/tool API. The manifest is restricted to v12 and uses the permanent `foundry-v12` update channel.
+
+Foundry VTT v14 users should install the main [`v1.0.0`](https://github.com/RudySimp/roar-impact/releases/tag/v1.0.0) release instead.

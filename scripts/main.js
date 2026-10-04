@@ -11,8 +11,10 @@ Hooks.once("ready",async()=>{
   catch(error){console.error("Roar Impact | Initialization failed",error);ui.notifications.error(game.i18n.localize("ROAR.Errors.Init"));}
 });
 Hooks.on("getSceneControlButtons",controls=>{
-  if(!game.user.isGM||!controls.tokens)return;
-  controls.tokens.tools.roarImpact={name:"roarImpact",title:"ROAR.Controls.Open",icon:"fa-solid fa-dragon",order:Object.keys(controls.tokens.tools).length,button:true,visible:true,onChange:()=>openPanel()};
+  if(!game.user.isGM)return;
+  const tokenControls=controls.find(control=>control.name==="token");
+  if(!tokenControls)return;
+  tokenControls.tools.push({name:"roarImpact",title:"ROAR.Controls.Open",icon:"fa-solid fa-dragon",button:true,visible:true,onClick:()=>openPanel()});
 });
 Hooks.on("canvasTearDown",()=>engine?.cleanupAll());
 Hooks.on("destroyToken",token=>{if(engine?.active.size)debug("Source token destroyed",token.id);});

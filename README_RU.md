@@ -1,6 +1,6 @@
 # Roar Impact
 
-Roar Impact 1.0.0 — автономный системно-независимый аудио/VFX-модуль для Foundry Virtual Tabletop v14. Выбранный токен становится источником единого события: основной вокализации, аккуратно подмешанных depth-слоёв, синхронизированных по моменту атаки VFX и временной реакции токенов.
+Эта ветка Roar Impact 1.0.0 предназначена только для **Foundry Virtual Tabletop v12** (reference build 12.343). Актуальная версия для Foundry v14 остаётся в ветке [`main`](https://github.com/RudySimp/roar-impact/tree/main).
 
 ## Возможности
 
@@ -16,9 +16,11 @@ Roar Impact 1.0.0 — автономный системно-независимы
 
 ## Установка
 
-В Foundry VTT v14 откройте **Add-on Modules → Install Module** и вставьте manifest URL:
+В Foundry VTT v12 откройте **Add-on Modules → Install Module** и вставьте отдельный v12 manifest URL:
 
-`https://raw.githubusercontent.com/RudySimp/roar-impact/main/module.json`
+`https://raw.githubusercontent.com/RudySimp/roar-impact/foundry-v12/module.json`
+
+[Отдельный релиз v12](https://github.com/RudySimp/roar-impact/releases/tag/v1.0.0-foundry12). Пользователям Foundry v14 следует использовать [основной v14-релиз](https://github.com/RudySimp/roar-impact/releases/tag/v1.0.0).
 
 После установки активируйте **Roar Impact** в мире.
 
@@ -33,7 +35,7 @@ Roar Impact 1.0.0 — автономный системно-независимы
 
 ## Ограничения
 
-- Поддерживается Foundry VTT v14.
-- Графический runtime Foundry v14 не был доступен в среде автоматической сборки; точная граница проверки описана в `TEST_REPORT.md`.
+- Поддерживается только Foundry VTT v12; manifest запрещает использование этого build в v13/v14.
+- Графический runtime Foundry v12.343 не был доступен в среде автоматической сборки; точная граница проверки описана в `TEST_REPORT_V12.md`.
 - Политика autoplay браузера может потребовать первого действия пользователя перед воспроизведением звука.
 - Лицензия медиа отличается от лицензии исходного кода; см. `LICENSE`.

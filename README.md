@@ -1,6 +1,6 @@
 # Roar Impact
 
-Roar Impact 1.0.0 is a standalone, system-agnostic audio and VFX module for Foundry Virtual Tabletop v14. It turns a selected token into the source of a synchronized monster-vocal event: a main vocal, restrained depth layers, impact-timed scene-space VFX, and non-destructive token reactions.
+Roar Impact 1.0.0 on this branch is the standalone, system-agnostic edition for **Foundry Virtual Tabletop v12** (reference build 12.343). The current Foundry v14 edition remains on [`main`](https://github.com/RudySimp/roar-impact/tree/main).
 
 ## Features
 
@@ -16,9 +16,11 @@ Roar Impact 1.0.0 is a standalone, system-agnostic audio and VFX module for Foun
 
 ## Installation
 
-In Foundry VTT v14, choose **Add-on Modules → Install Module**, paste this manifest URL, and install:
+In Foundry VTT v12, choose **Add-on Modules → Install Module**, paste this v12-only manifest URL, and install:
 
-`https://raw.githubusercontent.com/RudySimp/roar-impact/main/module.json`
+`https://raw.githubusercontent.com/RudySimp/roar-impact/foundry-v12/module.json`
+
+Foundry v12 release: [Roar Impact v1.0.0 - Foundry VTT v12](https://github.com/RudySimp/roar-impact/releases/tag/v1.0.0-foundry12). Foundry v14 users must use the [main v14 release](https://github.com/RudySimp/roar-impact/releases/tag/v1.0.0).
 
 Enable **Roar Impact** in the world's module management screen.
 
@@ -48,8 +50,8 @@ The `play` API is GM-only and accepts a Token via `token` plus the same optional
 
 ## Compatibility and limitations
 
-- Intended for Foundry VTT v14 only.
-- A live Foundry v14 graphical runtime was not available during the automated release checks; see `TEST_REPORT.md` for the exact verification boundary.
+- Intended for Foundry VTT v12 only; the manifest prevents installation as a v13/v14 build.
+- A live Foundry v12.343 graphical runtime was not available during the automated release checks; see `TEST_REPORT_V12.md` for the exact verification boundary.
 - Client autoplay policy may require a first browser interaction before audio can start.
 - The supplied media are bundled runtime assets; their licensing is separate from the source-code license described in `LICENSE`.
 
